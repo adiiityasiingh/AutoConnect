@@ -1,0 +1,63 @@
+/* Theme Variables */
+:root {
+  --transition-duration: 0.3s;
+  --gradient-text: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+  --gradient-dark: linear-gradient(to bottom right, #1a1a1a, #000000);
+  
+  /* Light theme */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #121212;
+  --text-secondary: #4b5563;
+  --toggle-bg: #e5e7eb;
+  --toggle-icon: #4b5563;
+  
+  /* Dark theme */
+  &[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #9ca3af;
+    --toggle-bg: #374151;
+    --toggle-icon: #e5e7eb;
+  }
+}
+
+/* Base styles */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Theme transition class */
+.theme-transition {
+  transition: background-color var(--transition-duration),
+              color var(--transition-duration),
+              border-color var(--transition-duration),
+              box-shadow var(--transition-duration);
+}
+
+/* Dark theme styles */
+body[data-theme="dark"] {
+  background: var(--gradient-dark);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Heading gradients in dark mode */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
