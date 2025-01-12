@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Instagram, Mail, CreditCard } from 'lucide-react';
 
@@ -31,7 +30,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
+          <div className='flex'>
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
@@ -62,7 +61,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className='w-[44%]'>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
             <p className="text-gray-300 mb-4">
               Stay updated with our latest features and city launches.
@@ -76,6 +75,7 @@ const Footer = () => {
                   className="w-full bg-indigo-700 text-white placeholder-gray-400 pl-10 pr-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
                 />
               </div>
+
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -84,6 +84,7 @@ const Footer = () => {
                 Subscribe
               </motion.button>
             </form>
+          </div>
           </div>
         </div>
 

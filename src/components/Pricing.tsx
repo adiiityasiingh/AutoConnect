@@ -1,24 +1,23 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 
 const Pricing = () => {
   const plans = [
     {
-      name: 'Basic',
-      price: 29,
+      name: 'First User',
+      price: 0,
       features: ['Single city access', 'Basic support', 'Monthly reports', 'Standard benefits'],
       recommended: false
     },
     {
-      name: 'Premium',
-      price: 49,
+      name: 'weekly',
+      price: 5,
       features: ['Multi-city access', 'Priority support', 'Real-time tracking', 'Premium benefits'],
       recommended: true
     },
     {
-      name: 'Family',
-      price: 89,
+      name: 'Monthly',
+      price: 15,
       features: ['Up to 5 cards', '24/7 support', 'Family dashboard', 'All premium benefits'],
       recommended: false
     }

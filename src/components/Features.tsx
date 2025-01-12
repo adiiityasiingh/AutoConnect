@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Smartphone, Wifi, Clock, Shield } from 'lucide-react';
 
